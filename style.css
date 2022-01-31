@@ -4,22 +4,31 @@
     box-sizing:border-box;
 }
 
-img{
-    height: 300px;
-}
-
 .container-esterno{
     padding:20px 150px;
 }
 
-.prima-immagine, .seconda-immagine, .terza-immagine{
-    display: inline;
-    margin-right:10px;
-    position:relative;  
+.container-prima-riga{
+    margin-bottom:30px; /*notare che la prima riga contenente le tre immagini
+                        è staccata dalla seconda riga contenete le altre tre immagini*/
 }
 
-.prima-immagine:hover .heart{
-    color:red;
+img{
+    height: 300px;
+}
+
+.primo-prodotto, .secondo-prodotto, .terzo-prodotto{
+    display: inline-block;  /*in questo modo il contenitore si adatta alla riga in cui ci 
+                            sono le immagini e non su tutta la riga cioè si adatta al contenuto*/
+    margin-right:10px;
+}
+
+.immagine{
+    position: relative;
+}
+
+.immagine:hover .heart{
+    color:red;  /*cosicchè quando ci passo sopra col mouse il cuoricino diventa rosso*/
 }
 
 .heart{
@@ -29,11 +38,6 @@ img{
     background-color: white;
     color:black;
 }
-/*
-.heart::after{
-    content:"&hearts;";
-    color:black;
-}*/
 
 .scritta-fondo-immagine{
     position:absolute;
@@ -41,11 +45,31 @@ img{
     color:white;
 }
 
-.cinquanta-percento{
+.percento-di-sconto{
     background-color: red;
+    color:white;
 }
 
 .sostenibilita{
     background-color: green;
+}
+
+.marca{
+    font-size: 5px;
+    font-weight: 600;
+}
+
+.modello{
+    font-size: 10px;
+    font-weight: 800;
+    display: block;
+}
+
+.prezzo-scontato{
+    color:red;
+}
+
+.prezzo-originale{
+    text-decoration: line-through;  /*la scritta del prezzo originale (non scontato) è sbarrata*/
 }
 
