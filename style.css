@@ -5,7 +5,7 @@
 }
 
 .container-esterno{
-    padding:20px 150px;
+    padding:50px 150px;
 }
 
 .container-prima-riga{
@@ -30,6 +30,12 @@ img{
 .immagine:hover .heart{
     color:red;  /*cosicchè quando ci passo sopra col mouse il cuoricino diventa rosso*/
 }
+/*vedere
+.immagine:hover .img{
+    display: none;
+    background-image: url(img/1b.webp);
+    height:370px;
+}*/
 
 .heart{
     position: absolute;
