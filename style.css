@@ -30,12 +30,29 @@ img{
 .immagine:hover .heart{
     color:red;  /*cosicchè quando ci passo sopra col mouse il cuoricino diventa rosso*/
 }
-/*vedere
-.immagine:hover .img{
-    display: none;
-    background-image: url(img/1b.webp);
+
+.immagine-in-chiaro, .immagine-nascosta{
     height:370px;
-}*/
+    width: 100%;
+}
+
+.immagine-in-chiaro{
+    display:block; 
+}
+
+.immagine-nascosta{
+    display:none;
+}
+
+.immagine:hover .immagine-in-chiaro{    /*cosicchè quando passo ci passo sopra col 
+                                         mouse l'immagine già presente viene nascosta*/
+    display:none;
+}
+
+.immagine:hover .immagine-nascosta{ /*quando passo sopra col mouse l'immagine già presente scompare e compare l'immagine 
+                                     con la proprietà 'display:block' settata*/
+    display:block;
+}
 
 .heart{
     position: absolute;
